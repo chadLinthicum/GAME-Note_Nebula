@@ -1,0 +1,17 @@
+﻿{
+    "catwalk_start_251120": {
+        "Version": "1.10.1822.1",
+        "Scene": {
+            "Name": true,
+            "SupportShaderSelect": true
+        },
+        "Export Directory": "C:/RLConverterServices/RLConverter/TempData/Convert/b8b0c08e4d8f0987/JIC78c97a0665e18aa71",
+        "Object": {
+            "catwalk_start_251120": {
+                "Generation": "AccuRig",
+                "Physics": {},
+                "Meshes": {}
+            }
+        }
+    }
+}
