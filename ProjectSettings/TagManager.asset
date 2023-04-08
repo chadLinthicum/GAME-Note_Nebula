@@ -3,7 +3,20 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CinemachineTarget
+  - C
+  - C#
+  - D
+  - D#
+  - E
+  - F
+  - F#
+  - G
+  - G#
+  - A
+  - A#
+  - B
   layers:
   - Default
   - TransparentFX
