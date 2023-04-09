@@ -4,67 +4,63 @@ using UnityEngine;
 
 public class CollectItems : MonoBehaviour
 {
-    private bool itemCFound = false;
-    private bool itemDSharpFound = false;
-    private bool itemFFound = false;
-
     public AudioClip WIN;
-
+    public AudioClip Piano_SmokeOnTheWater;
     private AudioSource playerAudio;
+    public List<string> Song;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         playerAudio = GetComponent<AudioSource>();
+        Song.Add("C");
+        Song.Add("D#");
+        Song.Add("F");
+        Song.Add("C");
+        Song.Add("D#");
+        Song.Add("F#");
+        Song.Add("F");
+        Song.Add("C");
+        Song.Add("D#");
+        Song.Add("F");
+        Song.Add("D#");
+        Song.Add("C");
+        playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.4f);
     }
 
 
-
-    private void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "C" && !itemCFound && !itemDSharpFound)
+        if (Song.Count > 0)
         {
-            itemCFound = true;
-            Debug.Log("Collected item C");
-        }
-        else if (other.gameObject.tag == "C")
-        {
-            ResetCollectedItems();
-            Debug.Log("WRONG");
-            return;
+            if (other.gameObject.tag == Song[0])
+            {
+                Song.Remove(Song[0]);
+                if (Song.Count == 0)
+                {
+                    playerAudio.PlayOneShot(WIN, 0.5f);
+                }
+            }
+            else
+            {
+                Debug.Log("WRONG!");
+                Song.Clear();
+                Song.Add("C");
+                Song.Add("D#");
+                Song.Add("F");
+                Song.Add("C");
+                Song.Add("D#");
+                Song.Add("F#");
+                Song.Add("F");
+                Song.Add("C");
+                Song.Add("D#");
+                Song.Add("F");
+                Song.Add("D#");
+                Song.Add("C");
+                Debug.Log(Song.Count);
+            }
         }
 
-        if (other.gameObject.tag == "D#" && itemCFound && !itemDSharpFound && !itemFFound)
-        {
-            itemDSharpFound = true;
-            Debug.Log("Collected item D#");
-        }
-        else if (other.gameObject.tag == "D#")
-        {
-            ResetCollectedItems();
-            Debug.Log("WRONG");
-            return;
-        }
-
-        if (other.gameObject.tag == "F" && itemCFound && itemDSharpFound && !itemFFound)
-        {
-            itemFFound = true;
-            Debug.Log("WIN");
-            //playerAudio.PlayOneShot(WIN, 0.5f);
-            //ResetCollectedItems();
-        }
-        else if (other.gameObject.tag == "F")
-        {
-            ResetCollectedItems();
-            Debug.Log("WRONG");
-            return;
-        }
-    }
-
-    private void ResetCollectedItems()
-    {
-        itemCFound = false;
-        itemDSharpFound = false;
-        itemFFound = false;
     }
 }
+
+
