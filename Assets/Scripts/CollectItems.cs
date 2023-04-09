@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class CollectItems : MonoBehaviour
 {
-    public GameObject itemC;
-    public GameObject itemCSharp;
-    public GameObject itemD;
-
     private bool itemCFound = false;
-    private bool itemCSharpFound = false;
-    private bool itemDFound = false;
+    private bool itemDSharpFound = false;
+    private bool itemFFound = false;
+
+
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "C" && !itemCFound && !itemCSharpFound)
+        if (other.gameObject.tag == "C" && !itemCFound && !itemDSharpFound)
         {
             itemCFound = true;
             Debug.Log("Collected item C");
@@ -26,26 +24,25 @@ public class CollectItems : MonoBehaviour
             return;
         }
 
-        if (other.gameObject.tag == "C#" && itemCFound && !itemCSharpFound && !itemDFound)
+        if (other.gameObject.tag == "D#" && itemCFound && !itemDSharpFound && !itemFFound)
         {
-            itemCSharpFound = true;
-            Debug.Log("Collected item C#");
+            itemDSharpFound = true;
+            Debug.Log("Collected item D#");
         }
-        else if (other.gameObject.tag == "C#")
+        else if (other.gameObject.tag == "D#")
         {
             ResetCollectedItems();
             Debug.Log("WRONG");
             return;
         }
 
-        if (other.gameObject.tag == "D" && itemCFound && itemCSharpFound && !itemDFound)
+        if (other.gameObject.tag == "F" && itemCFound && itemDSharpFound && !itemFFound)
         {
-            itemDFound = true;
-            Debug.Log("Collected item D");
-            Debug.Log("NICE PLAYING!");
+            itemFFound = true;
+            Debug.Log("Collected item F");
             ResetCollectedItems();
         }
-        else if (other.gameObject.tag == "D")
+        else if (other.gameObject.tag == "F")
         {
             ResetCollectedItems();
             Debug.Log("WRONG");
@@ -56,7 +53,7 @@ public class CollectItems : MonoBehaviour
     private void ResetCollectedItems()
     {
         itemCFound = false;
-        itemCSharpFound = false;
-        itemDFound = false;
+        itemDSharpFound = false;
+        itemFFound = false;
     }
 }
