@@ -1060,11 +1060,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379108143}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &457364925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b05ad590bf89c054dbde3bc958aa01a7, type: 3}
+  m_PrefabInstance: {fileID: 358908528}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &457364926 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b05ad590bf89c054dbde3bc958aa01a7, type: 3}
   m_PrefabInstance: {fileID: 358908528}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &457364927
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457364925}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 16.624546, y: 7.8794813, z: 20.185919}
+  m_Center: {x: 9.777149, y: -39.50788, z: 8.676124}
 --- !u!1 &480007086
 GameObject:
   m_ObjectHideFlags: 0
@@ -2794,11 +2812,29 @@ LightProbeGroup:
   - {x: 7.1518564, y: 2.7763042, z: -11.2319765}
   - {x: 8.993203, y: 2.3566551, z: -8.796325}
   m_Dering: 1
+--- !u!1 &895584592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5043e9312b1d23e49bfc9039ff3c63db, type: 3}
+  m_PrefabInstance: {fileID: 1382337904}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &895584593 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 5043e9312b1d23e49bfc9039ff3c63db, type: 3}
   m_PrefabInstance: {fileID: 1382337904}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &895584594
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895584592}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.86622, y: 7.50037, z: 20.185917}
+  m_Center: {x: 4.982495, y: -43.55592, z: 8.676458}
 --- !u!1 &945542548
 GameObject:
   m_ObjectHideFlags: 0
@@ -3524,11 +3560,29 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1152681203}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1157054204 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 42cdb5e7e2e0fe64c93042b0e29ffe00, type: 3}
+  m_PrefabInstance: {fileID: 1517091007}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1157054205 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 42cdb5e7e2e0fe64c93042b0e29ffe00, type: 3}
   m_PrefabInstance: {fileID: 1517091007}
   m_PrefabAsset: {fileID: 0}
+--- !u!65 &1157054206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157054204}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18.036446, y: 17.860706, z: 3.3729115}
+  m_Center: {x: 5.2754917, y: -17.009771, z: 0.26995268}
 --- !u!1 &1204220858
 GameObject:
   m_ObjectHideFlags: 0
@@ -4324,6 +4378,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1331944835}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1374615553 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b7e59abdce3214b49b5a4122e50cd8dc, type: 3}
+  m_PrefabInstance: {fileID: 1111718154}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1374615554
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374615553}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 15.86622, y: 7.3931227, z: 20.185917}
+  m_Center: {x: 4.982509, y: -43.49833, z: 8.6764345}
 --- !u!1001 &1382337904
 PrefabInstance:
   m_ObjectHideFlags: 0
