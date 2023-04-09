@@ -17,6 +17,7 @@ TagManager:
   - A
   - A#
   - B
+  - Button-Play
   layers:
   - Default
   - TransparentFX

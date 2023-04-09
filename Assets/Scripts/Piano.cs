@@ -17,6 +17,7 @@ public class Piano : MonoBehaviour
     public AudioClip A_Key;
     public AudioClip ASharp_Key;
     public AudioClip B_Key;
+    public AudioClip Piano_SmokeOnTheWater;
 
     private AudioSource playerAudio;
 
@@ -87,6 +88,11 @@ public class Piano : MonoBehaviour
         {
             //Debug.Log("B");
             playerAudio.PlayOneShot(B_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Button-Play")
+        {
+            //Debug.Log("Playing Piano-SmokeOnTheWay");
+            playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.4f);
         }
     }
 
