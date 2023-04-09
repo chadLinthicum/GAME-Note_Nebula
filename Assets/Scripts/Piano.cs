@@ -30,61 +30,62 @@ public class Piano : MonoBehaviour
     {
         if (Col.gameObject.tag == "C")
         {
-            Debug.Log("C");
+            //Debug.Log("C");
             playerAudio.PlayOneShot(C_Key, 1.0f);
         }
         if (Col.gameObject.tag == "C#")
         {
-            Debug.Log("C#");
+            //Debug.Log("C#");
             playerAudio.PlayOneShot(CSharp_Key, 1.0f);
         }
         if (Col.gameObject.tag == "D")
         {
-            Debug.Log("D");
+            //Debug.Log("D");
             playerAudio.PlayOneShot(D_Key, 1.0f);
         }
         if (Col.gameObject.tag == "D#")
         {
-            Debug.Log("D#");
+            //Debug.Log("D#");
             playerAudio.PlayOneShot(DSharp_Key, 1.0f);
         }
         if (Col.gameObject.tag == "E")
         {
-            Debug.Log("E");
+            //Debug.Log("E");
             playerAudio.PlayOneShot(E_Key, 1.0f);
         }
         if (Col.gameObject.tag == "F")
         {
-            Debug.Log("F");
+            //Debug.Log("F");
             playerAudio.PlayOneShot(F_Key, 1.0f);
         }
         if (Col.gameObject.tag == "F#")
         {
-            Debug.Log("F#");
+            //Debug.Log("F#");
             playerAudio.PlayOneShot(FSharp_Key, 1.0f);
         }
         if (Col.gameObject.tag == "G")
         {
+            //Debug.Log("G");
             playerAudio.PlayOneShot(G_Key, 1.0f);
         }
         if (Col.gameObject.tag == "G#")
         {
-            Debug.Log("G#");
+            //Debug.Log("G#");
             playerAudio.PlayOneShot(GSharp_Key, 1.0f);
         }
         if (Col.gameObject.tag == "A")
         {
-            Debug.Log("A");
+            //Debug.Log("A");
             playerAudio.PlayOneShot(A_Key, 1.0f);
         }
         if (Col.gameObject.tag == "A#")
         {
-            Debug.Log("A#");
+            //Debug.Log("A#");
             playerAudio.PlayOneShot(ASharp_Key, 1.0f);
         }
         if (Col.gameObject.tag == "B")
         {
-            Debug.Log("B");
+            //Debug.Log("B");
             playerAudio.PlayOneShot(B_Key, 1.0f);
         }
     }

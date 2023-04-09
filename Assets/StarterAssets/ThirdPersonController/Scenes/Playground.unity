@@ -2127,6 +2127,7 @@ GameObject:
   - component: {fileID: 1302138145}
   - component: {fileID: 1302138144}
   - component: {fileID: 1302138143}
+  - component: {fileID: 1302138146}
   m_Layer: 0
   m_Name: C#-Trigger
   m_TagString: C#
@@ -2212,6 +2213,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1302138141}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1302138146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1302138141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29515da75eab2e84e87097cb7b664a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemC: {fileID: 0}
+  itemCSharp: {fileID: 0}
+  itemD: {fileID: 0}
 --- !u!1 &1327619676
 GameObject:
   m_ObjectHideFlags: 0
@@ -3232,6 +3248,7 @@ GameObject:
   - component: {fileID: 1879276622}
   - component: {fileID: 1879276621}
   - component: {fileID: 1879276620}
+  - component: {fileID: 1879276623}
   m_Layer: 0
   m_Name: D-Trigger
   m_TagString: D
@@ -3317,6 +3334,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879276618}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1879276623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1879276618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29515da75eab2e84e87097cb7b664a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemC: {fileID: 0}
+  itemCSharp: {fileID: 0}
+  itemD: {fileID: 0}
 --- !u!1 &1935732030
 GameObject:
   m_ObjectHideFlags: 0
@@ -3729,6 +3761,7 @@ GameObject:
   - component: {fileID: 2096759557}
   - component: {fileID: 2096759556}
   - component: {fileID: 2096759555}
+  - component: {fileID: 2096759558}
   m_Layer: 0
   m_Name: C-Trigger
   m_TagString: C
@@ -3814,6 +3847,21 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096759553}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2096759558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096759553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29515da75eab2e84e87097cb7b664a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemC: {fileID: 0}
+  itemCSharp: {fileID: 0}
+  itemD: {fileID: 0}
 --- !u!1 &2102306004
 GameObject:
   m_ObjectHideFlags: 0
@@ -5298,10 +5346,11 @@ GameObject:
   - component: {fileID: 5885216829670671795}
   - component: {fileID: 135756641613574975}
   - component: {fileID: 4416926083347132239}
-  - component: {fileID: 6982812147933622148}
   - component: {fileID: 6982812147933622150}
   - component: {fileID: 6982812147933622149}
   - component: {fileID: 6982812147933622151}
+  - component: {fileID: 6982812147933622148}
+  - component: {fileID: 6982812147933622152}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -6223,6 +6272,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &6982812147933622152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416926083347132227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29515da75eab2e84e87097cb7b664a34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemC: {fileID: 0}
+  itemCSharp: {fileID: 0}
+  itemD: {fileID: 0}
 --- !u!4 &6983258930626336602
 Transform:
   m_ObjectHideFlags: 0
