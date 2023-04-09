@@ -49,9 +49,9 @@ public class CollectItems : MonoBehaviour
         if (other.gameObject.tag == "F" && itemCFound && itemDSharpFound && !itemFFound)
         {
             itemFFound = true;
-            Debug.Log("Collected item F");
-            playerAudio.PlayOneShot(WIN, 0.5f);
-            ResetCollectedItems();
+            Debug.Log("WIN");
+            //playerAudio.PlayOneShot(WIN, 0.5f);
+            //ResetCollectedItems();
         }
         else if (other.gameObject.tag == "F")
         {
