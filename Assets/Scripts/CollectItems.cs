@@ -8,6 +8,16 @@ public class CollectItems : MonoBehaviour
     private bool itemDSharpFound = false;
     private bool itemFFound = false;
 
+    public AudioClip WIN;
+
+    private AudioSource playerAudio;
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        playerAudio = GetComponent<AudioSource>();
+    }
+
 
 
     private void OnTriggerEnter(Collider other)
@@ -40,6 +50,7 @@ public class CollectItems : MonoBehaviour
         {
             itemFFound = true;
             Debug.Log("Collected item F");
+            playerAudio.PlayOneShot(WIN, 0.5f);
             ResetCollectedItems();
         }
         else if (other.gameObject.tag == "F")

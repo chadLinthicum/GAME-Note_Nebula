@@ -29,70 +29,109 @@ public class Piano : MonoBehaviour
 
     public void OnTriggerEnter(Collider Col)
     {
+        //Test Piano
         if (Col.gameObject.tag == "C")
         {
-            //Debug.Log("C");
             playerAudio.PlayOneShot(C_Key, 1.0f);
         }
         if (Col.gameObject.tag == "C#")
         {
-            //Debug.Log("C#");
             playerAudio.PlayOneShot(CSharp_Key, 1.0f);
         }
         if (Col.gameObject.tag == "D")
         {
-            //Debug.Log("D");
             playerAudio.PlayOneShot(D_Key, 1.0f);
         }
         if (Col.gameObject.tag == "D#")
         {
-            //Debug.Log("D#");
             playerAudio.PlayOneShot(DSharp_Key, 1.0f);
         }
         if (Col.gameObject.tag == "E")
         {
-            //Debug.Log("E");
             playerAudio.PlayOneShot(E_Key, 1.0f);
         }
         if (Col.gameObject.tag == "F")
         {
-            //Debug.Log("F");
             playerAudio.PlayOneShot(F_Key, 1.0f);
         }
         if (Col.gameObject.tag == "F#")
         {
-            //Debug.Log("F#");
             playerAudio.PlayOneShot(FSharp_Key, 1.0f);
         }
         if (Col.gameObject.tag == "G")
         {
-            //Debug.Log("G");
             playerAudio.PlayOneShot(G_Key, 1.0f);
         }
         if (Col.gameObject.tag == "G#")
         {
-            //Debug.Log("G#");
             playerAudio.PlayOneShot(GSharp_Key, 1.0f);
         }
         if (Col.gameObject.tag == "A")
         {
-            //Debug.Log("A");
             playerAudio.PlayOneShot(A_Key, 1.0f);
         }
         if (Col.gameObject.tag == "A#")
         {
-            //Debug.Log("A#");
             playerAudio.PlayOneShot(ASharp_Key, 1.0f);
         }
         if (Col.gameObject.tag == "B")
         {
-            //Debug.Log("B");
             playerAudio.PlayOneShot(B_Key, 1.0f);
         }
         if (Col.gameObject.tag == "Button-Play")
         {
-            //Debug.Log("Playing Piano-SmokeOnTheWay");
             playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.4f);
+        }
+
+        //Practice Piano
+        if (Col.gameObject.tag == "Practice_C")
+        {
+            playerAudio.PlayOneShot(C_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_C#")
+        {
+            playerAudio.PlayOneShot(CSharp_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_D")
+        {
+            playerAudio.PlayOneShot(D_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_D#")
+        {
+            playerAudio.PlayOneShot(DSharp_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_E")
+        {
+            playerAudio.PlayOneShot(E_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_F")
+        {
+            playerAudio.PlayOneShot(F_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_F#")
+        {
+            playerAudio.PlayOneShot(FSharp_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_G")
+        {
+            playerAudio.PlayOneShot(G_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_G#")
+        {
+            playerAudio.PlayOneShot(GSharp_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_A")
+        {
+            playerAudio.PlayOneShot(A_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_A#")
+        {
+            playerAudio.PlayOneShot(ASharp_Key, 1.0f);
+        }
+        if (Col.gameObject.tag == "Practice_B")
+        {
+
+            playerAudio.PlayOneShot(B_Key, 1.0f);
         }
     }
 
