@@ -9551,6 +9551,7 @@ GameObject:
   - component: {fileID: 6982812147933622148}
   - component: {fileID: 6982812147933622153}
   - component: {fileID: 6982812147933622151}
+  - component: {fileID: 6982812147933622154}
   m_Layer: 8
   m_Name: PlayerArmature
   m_TagString: Player
@@ -10474,6 +10475,18 @@ MonoBehaviour:
   Piano_SmokeOnTheWater: {fileID: 8300000, guid: 4fc8d4d6364ccca41b5905b3c792d381, type: 3}
   WRONG: {fileID: 8300000, guid: 2ce564d95fbbac6439ab23d33fe97fb0, type: 3}
   Song: []
+--- !u!114 &6982812147933622154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4416926083347132227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 164d1e97d0b39a649ad4fd7f71779162, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &6983258930626336602
 Transform:
   m_ObjectHideFlags: 0
