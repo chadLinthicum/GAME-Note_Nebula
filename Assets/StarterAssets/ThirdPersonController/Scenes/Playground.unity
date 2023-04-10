@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 8900000, guid: 619e305f5165a9946b7f72464e44ca4a, type: 3}
   m_Sun: {fileID: 2114283754330233425}
-  m_IndirectSpecularColor: {r: 0.025252314, g: 0.054982007, b: 0.11085914, a: 1}
+  m_IndirectSpecularColor: {r: 0.029152213, g: 0.064445764, b: 0.12695098, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 3021726}
   - component: {fileID: 3021725}
   - component: {fileID: 3021724}
+  - component: {fileID: 3021727}
   m_Layer: 0
   m_Name: A#-Trigger
   m_TagString: A#
@@ -220,6 +221,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3021722}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &3021727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3021722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!4 &17479799 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 756329d2daacf0b43b712c76c0660f52, type: 3}
@@ -878,6 +904,7 @@ GameObject:
   - component: {fileID: 363377881}
   - component: {fileID: 363377880}
   - component: {fileID: 363377879}
+  - component: {fileID: 363377882}
   m_Layer: 0
   m_Name: A#-Trigger
   m_TagString: Practice_A#
@@ -963,6 +990,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 363377877}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &363377882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 363377877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1 &379108143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,14 +1179,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 480007086}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29515da75eab2e84e87097cb7b664a34, type: 3}
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemCFound: 0
-  itemDSharpFound: 0
-  itemFFound: 0
-  WIN: {fileID: 0}
-  playerAudio: {fileID: 0}
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!65 &480007089
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1585,6 +1645,7 @@ GameObject:
   - component: {fileID: 616502512}
   - component: {fileID: 616502511}
   - component: {fileID: 616502510}
+  - component: {fileID: 616502513}
   m_Layer: 0
   m_Name: D#-Trigger
   m_TagString: D#
@@ -1670,6 +1731,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 616502508}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &616502513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616502508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1 &640970461
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,6 +1962,7 @@ GameObject:
   - component: {fileID: 690240579}
   - component: {fileID: 690240578}
   - component: {fileID: 690240577}
+  - component: {fileID: 690240580}
   m_Layer: 0
   m_Name: G-Trigger
   m_TagString: G
@@ -1961,6 +2048,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 690240575}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &690240580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 690240575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1 &697530477
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,6 +2251,7 @@ GameObject:
   - component: {fileID: 779709412}
   - component: {fileID: 779709411}
   - component: {fileID: 779709410}
+  - component: {fileID: 779709413}
   m_Layer: 0
   m_Name: F-Trigger
   m_TagString: F
@@ -2224,6 +2337,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779709408}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &779709413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779709408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1 &785697600
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,6 +3619,7 @@ GameObject:
   - component: {fileID: 1144753544}
   - component: {fileID: 1144753543}
   - component: {fileID: 1144753542}
+  - component: {fileID: 1144753545}
   m_Layer: 0
   m_Name: E-Trigger
   m_TagString: E
@@ -3566,6 +3705,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1144753540}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1144753545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144753540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1 &1152681203
 GameObject:
   m_ObjectHideFlags: 0
@@ -3795,6 +3959,7 @@ GameObject:
   - component: {fileID: 1212501119}
   - component: {fileID: 1212501118}
   - component: {fileID: 1212501117}
+  - component: {fileID: 1212501120}
   m_Layer: 0
   m_Name: F#-Trigger
   m_TagString: F#
@@ -3880,6 +4045,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1212501115}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1212501120
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212501115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1 &1213851086
 GameObject:
   m_ObjectHideFlags: 0
@@ -4156,6 +4346,7 @@ GameObject:
   - component: {fileID: 1286301642}
   - component: {fileID: 1286301641}
   - component: {fileID: 1286301640}
+  - component: {fileID: 1286301643}
   m_Layer: 0
   m_Name: E-Trigger
   m_TagString: Practice_E
@@ -4241,6 +4432,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1286301638}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1286301643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286301638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1 &1302138141
 GameObject:
   m_ObjectHideFlags: 0
@@ -4348,14 +4564,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1302138141}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29515da75eab2e84e87097cb7b664a34, type: 3}
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemCFound: 0
-  itemDSharpFound: 0
-  itemFFound: 0
-  WIN: {fileID: 0}
-  playerAudio: {fileID: 0}
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1 &1327619676
 GameObject:
   m_ObjectHideFlags: 0
@@ -5198,14 +5422,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1661815957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29515da75eab2e84e87097cb7b664a34, type: 3}
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemCFound: 0
-  itemDSharpFound: 0
-  itemFFound: 0
-  WIN: {fileID: 0}
-  playerAudio: {fileID: 0}
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!65 &1661815960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5475,6 +5707,7 @@ GameObject:
   - component: {fileID: 1737319672}
   - component: {fileID: 1737319671}
   - component: {fileID: 1737319670}
+  - component: {fileID: 1737319673}
   m_Layer: 0
   m_Name: F#-Trigger
   m_TagString: Practice_F#
@@ -5560,6 +5793,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1737319668}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1737319673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737319668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1001 &1739084232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6072,14 +6330,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 1879276618}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29515da75eab2e84e87097cb7b664a34, type: 3}
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemCFound: 0
-  itemDSharpFound: 0
-  itemFFound: 0
-  WIN: {fileID: 0}
-  playerAudio: {fileID: 0}
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1 &1929303392
 GameObject:
   m_ObjectHideFlags: 0
@@ -6383,6 +6649,7 @@ GameObject:
   - component: {fileID: 1955434831}
   - component: {fileID: 1955434830}
   - component: {fileID: 1955434829}
+  - component: {fileID: 1955434832}
   m_Layer: 0
   m_Name: A-Trigger
   m_TagString: A
@@ -6468,6 +6735,31 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1955434827}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1955434832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955434827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1001 &1979352518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6718,14 +7010,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2065581646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29515da75eab2e84e87097cb7b664a34, type: 3}
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemCFound: 0
-  itemDSharpFound: 0
-  itemFFound: 0
-  WIN: {fileID: 0}
-  playerAudio: {fileID: 0}
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!65 &2065581649
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7090,14 +7390,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 2096759553}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29515da75eab2e84e87097cb7b664a34, type: 3}
+  m_Script: {fileID: 11500000, guid: bbfdcf0b75d54de4fb9b0936de73c59d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemCFound: 0
-  itemDSharpFound: 0
-  itemFFound: 0
-  WIN: {fileID: 0}
-  playerAudio: {fileID: 0}
+  C_Key: {fileID: 0}
+  CSharp_Key: {fileID: 0}
+  D_Key: {fileID: 0}
+  DSharp_Key: {fileID: 0}
+  E_Key: {fileID: 0}
+  F_Key: {fileID: 0}
+  FSharp_Key: {fileID: 0}
+  G_Key: {fileID: 0}
+  GSharp_Key: {fileID: 0}
+  A_Key: {fileID: 0}
+  ASharp_Key: {fileID: 0}
+  B_Key: {fileID: 0}
+  Piano_SmokeOnTheWater: {fileID: 0}
 --- !u!1 &2102306004
 GameObject:
   m_ObjectHideFlags: 0
