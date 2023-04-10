@@ -6,6 +6,7 @@ public class CollectItems : MonoBehaviour
 {
     public AudioClip WIN;
     public AudioClip Piano_SmokeOnTheWater;
+    public AudioClip WRONG;
     private AudioSource playerAudio;
     public List<string> Song;
 
@@ -40,9 +41,14 @@ public class CollectItems : MonoBehaviour
                     playerAudio.PlayOneShot(WIN, 0.5f);
                 }
             }
+            else if ((other.gameObject.tag == "Button-Play") || (other.gameObject.tag == "Practice_C") || (other.gameObject.tag == "Practice_C#") || (other.gameObject.tag == "Practice_D") || (other.gameObject.tag == "Practice_D#") || (other.gameObject.tag == "Practice_E") || (other.gameObject.tag == "Practice_F") || (other.gameObject.tag == "Practice_F#") || (other.gameObject.tag == "Practice_G") || (other.gameObject.tag == "Practice_G#") || (other.gameObject.tag == "Practice_A") || (other.gameObject.tag == "Practice_A#") || (other.gameObject.tag == "Practice_B"))
+            {
+                return;
+            }
+
             else
             {
-                Debug.Log("WRONG!");
+                playerAudio.PlayOneShot(WRONG, 1.0f);
                 Song.Clear();
                 Song.Add("C");
                 Song.Add("D#");
@@ -56,7 +62,6 @@ public class CollectItems : MonoBehaviour
                 Song.Add("F");
                 Song.Add("D#");
                 Song.Add("C");
-                Debug.Log(Song.Count);
             }
         }
 
