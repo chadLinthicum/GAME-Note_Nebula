@@ -80,7 +80,7 @@ public class Piano : MonoBehaviour
         }
         if (Col.gameObject.tag == "Button-Play")
         {
-            playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.4f);
+            playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.3f);
         }
 
         //Practice Piano

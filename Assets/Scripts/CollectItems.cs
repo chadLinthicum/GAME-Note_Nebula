@@ -25,7 +25,7 @@ public class CollectItems : MonoBehaviour
         Song.Add("F");
         Song.Add("D#");
         Song.Add("C");
-        playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.4f);
+        playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.3f);
     }
 
 
@@ -38,7 +38,7 @@ public class CollectItems : MonoBehaviour
                 Song.Remove(Song[0]);
                 if (Song.Count == 0)
                 {
-                    playerAudio.PlayOneShot(WIN, 0.75f);
+                    playerAudio.PlayOneShot(WIN, 0.6f);
                 }
             }
             else if ((other.gameObject.tag == "Button-Play") || (other.gameObject.tag == "Practice_C") || (other.gameObject.tag == "Practice_C#") || (other.gameObject.tag == "Practice_D") || (other.gameObject.tag == "Practice_D#") || (other.gameObject.tag == "Practice_E") || (other.gameObject.tag == "Practice_F") || (other.gameObject.tag == "Practice_F#") || (other.gameObject.tag == "Practice_G") || (other.gameObject.tag == "Practice_G#") || (other.gameObject.tag == "Practice_A") || (other.gameObject.tag == "Practice_A#") || (other.gameObject.tag == "Practice_B"))

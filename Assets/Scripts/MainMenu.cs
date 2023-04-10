@@ -7,6 +7,15 @@ using System.Threading;
 
 public class MainMenu : MonoBehaviour
 {
+
+    public AudioClip Background;
+    private AudioSource playerAudio;
+
+    public void Start()
+    {
+        playerAudio = GetComponent<AudioSource>();
+        playerAudio.PlayOneShot(Background, 0.8f);
+    }
     public void PlayGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
