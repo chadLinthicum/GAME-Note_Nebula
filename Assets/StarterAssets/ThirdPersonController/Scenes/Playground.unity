@@ -10001,6 +10001,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WIN: {fileID: 8300000, guid: bafcc7403fc6bdc4a9b4653136c8c905, type: 3}
   Piano_SmokeOnTheWater: {fileID: 8300000, guid: 4fc8d4d6364ccca41b5905b3c792d381, type: 3}
+  WRONG: {fileID: 8300000, guid: 2ce564d95fbbac6439ab23d33fe97fb0, type: 3}
   Song: []
 --- !u!4 &6983258930626336602
 Transform:
