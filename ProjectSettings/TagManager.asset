@@ -30,6 +30,7 @@ TagManager:
   - Practice_A
   - Practice_A#
   - Practice_B
+  - Door_Left
   layers:
   - Default
   - TransparentFX
