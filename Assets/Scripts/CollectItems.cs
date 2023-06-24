@@ -9,23 +9,32 @@ public class CollectItems : MonoBehaviour
     public AudioClip WRONG;
     private AudioSource playerAudio;
     public List<string> Song;
-
-    public void OpenDoors(string tagName, float speed)
+    public IEnumerator OpenDoors(string tagName, float distance)
     {
         // Find the object with the specified tag
-        GameObject obj = GameObject.FindGameObjectWithTag(tagName);
+        GameObject door = GameObject.FindGameObjectWithTag(tagName);
 
-        if (obj == null)
+        if (door == null)
         {
-            Debug.LogError("Object with tag " + tagName + " not found.");
-            return;
+            Debug.LogError("Object with tag '" + tagName + "' not found.");
+            yield break;
         }
 
-        // Set the distance to move the object
-        float distance = speed * Time.deltaTime;
+        // Set the speed at which the door will move
+        float speed = 0.025f;
 
-        // Move the object by the specified distance
-        obj.transform.position -= new Vector3(distance, 0f, 0f);
+        // Calculate the number of frames needed to move the door the total distance
+        int numFrames = Mathf.CeilToInt(Mathf.Abs(distance) / speed);
+
+        // Calculate the direction in which to move the door
+        Vector3 direction = distance > 0 ? Vector3.forward : Vector3.back;
+
+        // Move the door by a small amount each frame
+        for (int i = 0; i < numFrames; i++)
+        {
+            door.transform.Translate(direction * speed);
+            yield return null;
+        }
     }
 
     private void Start()
@@ -57,8 +66,9 @@ public class CollectItems : MonoBehaviour
                 if (Song.Count == 0)
                 {
                     //playerAudio.PlayOneShot(WIN, 0.6f);
-                    OpenDoors("Door_Left", 150f);
-                    OpenDoors("Door_Right", -150f);
+                    StartCoroutine(OpenDoors("Door_Left", 2.5f));
+                    StartCoroutine(OpenDoors("Door_Right", -2.5f));
+
                 }
             }
             else if ((other.gameObject.tag == "Button-Play") || (other.gameObject.tag == "Practice_C") || (other.gameObject.tag == "Practice_C#") || (other.gameObject.tag == "Practice_D") || (other.gameObject.tag == "Practice_D#") || (other.gameObject.tag == "Practice_E") || (other.gameObject.tag == "Practice_F") || (other.gameObject.tag == "Practice_F#") || (other.gameObject.tag == "Practice_G") || (other.gameObject.tag == "Practice_G#") || (other.gameObject.tag == "Practice_A") || (other.gameObject.tag == "Practice_A#") || (other.gameObject.tag == "Practice_B"))
