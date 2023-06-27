@@ -9,6 +9,8 @@ public class CollectItems : MonoBehaviour
     public AudioClip WRONG;
     private AudioSource playerAudio;
     public List<string> Song;
+
+
     public IEnumerator OpenDoors(string tagName, float distance)
     {
         // Find the object with the specified tag
@@ -37,6 +39,14 @@ public class CollectItems : MonoBehaviour
         }
     }
 
+    public void ChangeDoorLightColor(Color newColor)
+    {
+        foreach (GameObject light in GameObject.FindGameObjectsWithTag("Light_Door"))
+        {
+            light.GetComponent<Light>().color = newColor;
+        }
+    }
+
     private void Start()
     {
         playerAudio = GetComponent<AudioSource>();
@@ -52,7 +62,7 @@ public class CollectItems : MonoBehaviour
         //Song.Add("F");
         //Song.Add("D#");
         //Song.Add("C");
-        //playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.3f);
+        //playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.3f
     }
 
     void OnTriggerEnter(Collider other)
@@ -65,9 +75,10 @@ public class CollectItems : MonoBehaviour
                 Song.Remove(Song[0]);
                 if (Song.Count == 0)
                 {
-                    //playerAudio.PlayOneShot(WIN, 0.6f);
+                    playerAudio.PlayOneShot(WIN, 0.6f);
                     StartCoroutine(OpenDoors("Door_Left", 2.5f));
                     StartCoroutine(OpenDoors("Door_Right", -2.5f));
+                    ChangeDoorLightColor(Color.green);
 
                 }
             }
@@ -81,17 +92,17 @@ public class CollectItems : MonoBehaviour
                 playerAudio.PlayOneShot(WRONG, 1.0f);
                 Song.Clear();
                 Song.Add("C");
-                Song.Add("D#");
-                Song.Add("F");
-                Song.Add("C");
-                Song.Add("D#");
-                Song.Add("F#");
-                Song.Add("F");
-                Song.Add("C");
-                Song.Add("D#");
-                Song.Add("F");
-                Song.Add("D#");
-                Song.Add("C");
+                //Song.Add("D#");
+                //Song.Add("F");
+                //Song.Add("C");
+                //Song.Add("D#");
+                //Song.Add("F#");
+                //Song.Add("F");
+                //Song.Add("C");
+                //Song.Add("D#");
+                //Song.Add("F");
+                //Song.Add("D#");
+                //Song.Add("C");
             }
         }
 

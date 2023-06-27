@@ -32,6 +32,8 @@ TagManager:
   - Practice_B
   - Door_Left
   - Door_Right
+  - Light_Door
+  - Exit
   layers:
   - Default
   - TransparentFX
