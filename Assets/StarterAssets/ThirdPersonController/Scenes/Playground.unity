@@ -877,6 +877,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 294854474}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!95 &302907345 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 756329d2daacf0b43b712c76c0660f52, type: 3}
+  m_PrefabInstance: {fileID: 1781596102}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &333731353
 GameObject:
   m_ObjectHideFlags: 0
@@ -6962,7 +6967,7 @@ PrefabInstance:
     - target: {fileID: 7535015570453106315, guid: 756329d2daacf0b43b712c76c0660f52, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: d114cde0600508c4f9eed72b935654e6, type: 2}
+      objectReference: {fileID: 2100000, guid: fc04b62d192aa0346abc469ed226ff90, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 756329d2daacf0b43b712c76c0660f52, type: 3}
 --- !u!1 &1807861588
@@ -10912,7 +10917,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4416926083347132227}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 9000000, guid: 36078ab0369161e49a29d349ae3e0739, type: 3}
   m_Controller: {fileID: 9100000, guid: 40db3173a05ae3242b1c182a09b0a183, type: 2}
   m_CullingMode: 1
@@ -11104,6 +11109,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 164d1e97d0b39a649ad4fd7f71779162, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerAnimator: {fileID: 302907345}
+  playerInputs: {fileID: 135756641613574975}
 --- !u!4 &6983258930626336602
 Transform:
   m_ObjectHideFlags: 0
