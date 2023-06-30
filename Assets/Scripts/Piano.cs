@@ -18,6 +18,7 @@ public class Piano : MonoBehaviour
     public AudioClip ASharp_Key;
     public AudioClip B_Key;
     public AudioClip Piano_SmokeOnTheWater;
+    
 
     private AudioSource playerAudio;
 
@@ -84,9 +85,13 @@ public class Piano : MonoBehaviour
         }
 
         //Practice Piano
+        GameObject practiceObject = GameObject.FindGameObjectWithTag("Practice_C");
         if (Col.gameObject.tag == "Practice_C")
         {
             playerAudio.PlayOneShot(C_Key, 1.0f);
+            Vector3 newPosition = practiceObject.transform.position;
+            newPosition.y -= 0.05f;
+            practiceObject.transform.position = newPosition;
         }
         if (Col.gameObject.tag == "Practice_C#")
         {
@@ -135,6 +140,16 @@ public class Piano : MonoBehaviour
         }
     }
 
+     public void OnTriggerExit(Collider Col)
+    {
+         GameObject practiceObject = GameObject.FindGameObjectWithTag("Practice_C");
+        if (Col.gameObject.tag == "Practice_C")
+        {
+            Vector3 newPosition = practiceObject.transform.position;
+            newPosition.y += 0.05f;
+            practiceObject.transform.position = newPosition;
+        }
+    }
     // Update is called once per frame
     void Update()
     {

@@ -18,12 +18,12 @@ public class Player : MonoBehaviour
     {
         if (playerInputs.move == Vector2.zero)
         {
-            Debug.Log("not moving");
+            // Debug.Log("not moving");
             playerAnimator.SetBool("isMoving", false);
         }
         else
         {
-            Debug.Log("moving");
+            // Debug.Log("moving");
             playerAnimator.SetBool("isMoving", true);
         }
         playerAnimator.SetBool("isRunning", playerInputs.sprint);
