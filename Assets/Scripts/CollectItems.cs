@@ -51,18 +51,18 @@ public class CollectItems : MonoBehaviour
     {
         playerAudio = GetComponent<AudioSource>();
         Song.Add("C");
-        //Song.Add("D#");
-        //Song.Add("F");
-        //Song.Add("C");
-        //Song.Add("D#");
-        //Song.Add("F#");
-        //Song.Add("F");
-        //Song.Add("C");
-        //Song.Add("D#");
-        //Song.Add("F");
-        //Song.Add("D#");
-        //Song.Add("C");
-        //playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.3f
+        Song.Add("D#");
+        Song.Add("F");
+        Song.Add("C");
+        Song.Add("D#");
+        Song.Add("F#");
+        Song.Add("F");
+        Song.Add("C");
+        Song.Add("D#");
+        Song.Add("F");
+        Song.Add("D#");
+        Song.Add("C");
+        playerAudio.PlayOneShot(Piano_SmokeOnTheWater, 0.3f);
     }
 
     void OnTriggerEnter(Collider other)
@@ -92,17 +92,17 @@ public class CollectItems : MonoBehaviour
                 playerAudio.PlayOneShot(WRONG, 1.0f);
                 Song.Clear();
                 Song.Add("C");
-                //Song.Add("D#");
-                //Song.Add("F");
-                //Song.Add("C");
-                //Song.Add("D#");
-                //Song.Add("F#");
-                //Song.Add("F");
-                //Song.Add("C");
-                //Song.Add("D#");
-                //Song.Add("F");
-                //Song.Add("D#");
-                //Song.Add("C");
+                Song.Add("D#");
+                Song.Add("F");
+                Song.Add("C");
+                Song.Add("D#");
+                Song.Add("F#");
+                Song.Add("F");
+                Song.Add("C");
+                Song.Add("D#");
+                Song.Add("F");
+                Song.Add("D#");
+                Song.Add("C");
             }
         }
 
